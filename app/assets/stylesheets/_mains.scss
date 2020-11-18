@@ -1,0 +1,43 @@
+.create-one {
+  box-sizing: border-box;
+  padding: 46px 40px;
+  height: calc(100vh - 200px);
+  overflow: scroll;
+  background-image: image-url("zoom_fukuoka.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+    
+    &__body-main{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    &--top{
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+    &--middle{
+      font-size: 20px;
+      margin: 20px 0 30px;
+      line-height: 1.5;
+    }
+    &--bth{
+      width: 180px;
+      display: flex;
+      box-sizing: border-box;
+      .appBtn {
+        margin-right: 10px;
+        width: 180px;
+      }
+      .gooleBtn {
+          margin-right: 10px;
+          width: 180px;
+      }
+    }
+  }
+}
