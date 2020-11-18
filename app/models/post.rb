@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  validates :title, :content, :image, presence: true
+  validates :title, :content, presence: true
   belongs_to :user
 
   validates :content, presence: true, unless: :image?
