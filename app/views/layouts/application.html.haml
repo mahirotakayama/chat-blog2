@@ -11,7 +11,7 @@
   %body
   %header.header
     .header__title
-      = link_to "Chat-blog", root_path, class: "header__title--text"
+      = link_to "Chat-Blog", root_path, class: "header__title--text"
     .header__right
       - if user_signed_in?
         = link_to current_user.nickname, user_path(current_user), class: "header__right--btn"
