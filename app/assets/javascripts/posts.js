@@ -1,5 +1,4 @@
 $(function(){
-
   function buildHTML(post){
    if ( post.image ) {
      var html =

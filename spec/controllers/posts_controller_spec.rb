@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-describe PostsController do, type: :controller do
-
+describe PostsController, type: :controller do
   describe 'GET #new' do
     it "new.html.hamlに遷移すること" do
       get :new
@@ -9,6 +8,7 @@ describe PostsController do, type: :controller do
     end
   end
 end
+
 
   describe 'GET #edit' do
     it "@postに正しい値が入っていること" do
@@ -25,16 +25,16 @@ end
   end
 end
 
-describe 'GET #index' do
-  it "@tweetに正しい値が入っていること" do
-    posts = create_list(:post, 3)
-    get :index
-    expect(assigns(:posts)).to match(posts.sort{ |a, b| b.created_at <=. a.created_at })
-  end
+  describe 'GET #index' do
+    it "@postに正しい値が入っていること" do
+      posts = create_list(:post, 3)
+      get :index
+      expect(assigns(:posts)).to match(posts.sort{ |a, b| b.created_at <=. a.created_at })
+    end
 
-  it "index.html.hamlに遷移すること" do
-    get :index
-    expect(response).to render_template :index
+    it "index.html.hamlに遷移すること" do
+      get :index
+      expect(response).to render_template :index
+    end
   end
-end
 end
