@@ -52,3 +52,4 @@ production:
   database: chat-blog2_production
   username: chat-blog2
   password: <%= ENV['CHAT-BLOG2_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
