@@ -1,5 +1,5 @@
 current directory: /Users/jinguutakamaro/AMEBA/chat-blog2/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.16/ext/mri
-/Users/jinguutakamaro/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20201128-19309-6zhsl1.rb extconf.rb
+/Users/jinguutakamaro/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20201206-44257-1i1ox9p.rb extconf.rb
 creating Makefile
 
 current directory: /Users/jinguutakamaro/AMEBA/chat-blog2/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.16/ext/mri
@@ -36,4 +36,4 @@ linking shared-object bcrypt_ext.bundle
 
 current directory: /Users/jinguutakamaro/AMEBA/chat-blog2/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.16/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20201128-19309-ob2l1o
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20201206-44257-gprhbr
