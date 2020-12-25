@@ -16,10 +16,14 @@ default: &default
   username: root
   password: 11maro18
   host: localhost
-
+  socket: /tmp/mysql.sock
+  
 development:
   <<: *default
   database: chat-blog2_development
+  username: rails
+  password: 11maro18
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -27,6 +31,8 @@ development:
 test:
   <<: *default
   database: chat-blog2_test
+  username: rails
+  password: 11maro18
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -50,6 +56,7 @@ test:
 production:
   <<: *default
   database: chat-blog2_production
-  username: chat-blog2
-  password: <%= ENV['CHAT-BLOG2_DATABASE_PASSWORD'] %>
+  username: root
+  host: localhost
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
