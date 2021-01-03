@@ -55,4 +55,4 @@ production:
   username: root
   host: localhost
   password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+  socket: /tmp/mysql.sock
