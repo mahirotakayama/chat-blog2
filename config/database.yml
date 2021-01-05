@@ -46,8 +46,8 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+  # production:
+  #   url: <%= ENV['DATABASE_URL'] %>
 #
 production:
   <<: *default
@@ -56,3 +56,6 @@ production:
   host: localhost
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /tmp/mysql.sock
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

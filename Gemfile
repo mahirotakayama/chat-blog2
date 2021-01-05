@@ -62,7 +62,7 @@ group :test do
   gem 'faker', "~> 2.8"
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'sqlite3'
+  gem 'sqlite3', group: :development
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -81,5 +81,5 @@ gem 'rails-i18n'
 
 group :production do
   gem 'unicorn', '5.4.1'
-  gem 'pg'
+  gem 'pg', group: :production
 end
