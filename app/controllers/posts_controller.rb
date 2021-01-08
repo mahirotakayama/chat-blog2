@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.includes(:user).page(params[:page]).per(5).order("created_at DESC")
+    @posts = Post.includes(:user)
   end
 
   def new
