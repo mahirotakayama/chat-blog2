@@ -51,11 +51,6 @@ test:
 #
 production:
   <<: *default
-  database: chat-blog2_production
-  username: root
-  host: localhost
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /tmp/mysql.sock
   adapter: postgresql
   encoding: unicode
   pool: 5
