@@ -43,7 +43,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'capybara', '>= 2.15'
-  gem 'mysql2'
+  gem 'mysql2', '~>0.5.3'
 end
 
 group :development do
