@@ -14,12 +14,14 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
+  password: 11maro18
   host: localhost
-
+  socket: /tmp/mysql.sock
+  
 development:
   <<: *default
   database: chat-blog2_development
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -27,7 +29,7 @@ development:
 test:
   <<: *default
   database: chat-blog2_test
-
+  
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -44,12 +46,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+  # production:
+  #   url: <%= ENV['DATABASE_URL'] %>
 #
 production:
   <<: *default
-  database: chat-blog2_production
-  username: chat-blog2
-  password: <%= ENV['CHAT-BLOG2_DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
